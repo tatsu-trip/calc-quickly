@@ -9,7 +9,7 @@ export function useEncrypt() {
 
   const calculate = () => {
     try {
-      const encrypted = quickCalkUseCase(Number(amount), Number(key))
+      const encrypted = quickCalkUseCase(Number(amount), Number(key).toString())
       setResult(encrypted)
       setError(null)
     } catch (e) {
